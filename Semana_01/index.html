@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        .campo_form{
+            margin-bottom:10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <hr>
+    <form action="index.html">
+        <fieldset>
+            <legend>Dados pessoais básicos</legend>
+            <input class="campo_form" type="text" id="nome" name="nome" placeholder="Nome completo" size="30">
+            <input class="campo_form" type="email" id="email" name="email" placeholder="E-mail" size="30">
+            <input class="campo_form" type="tel" id="telefone" name="telefone" placeholder="Telefone com DDD">
+            <label for="data_nascimento">Data de nascimento</label>
+            <input class="campo_form" type="date" id="data_nascimento" name="data_nascimento">
+            <label for="genero">Gênero</label>
+            <input class="campo_form" list="genero">
+            <datalist id="genero">
+                <option value="masculino"></option>
+                <option value="feminino"></option>
+                <option value="Prefiro não dizer"></option>
+            </datalist>
+        </fieldset>
+        <div id="linha_seguimento">
+            <span>Selecione a categoria que vai seguir:</span> <br>
+            <input type="radio" name="area" id="front-end" value="front-end">
+            <label for="front-end">Front-end</label> <br>
+            <input type="radio" name="area" id="back-end" value="back-end">
+            <label for="back-end">Back-end</label> <br>
+            <input type="radio" name="area" id="full-stack" value="full-stack">
+            <label for="full-stack">Full-stack</label>
+        </div>
+        <div>
+            <span>Selecione as tecnologias aprendidas:</span> <br>
+            <input type="checkbox" name="tecnologia" id="html">
+            <label for="html">HTML</label> <br>
+            <input type="checkbox" name="tecnologia" id="css">
+            <label for="css">CSS</label> <br>
+            <input type="checkbox" name="tecnologia" id="javascript"> 
+            <label for="javascript">JavaScript</label> <br>
+            <input type="checkbox" name="tecnologia" id="python">
+            <label for="python">Python</label> <br>
+            <input type="checkbox" name="tecnologia" name="mysql" id="mysql">
+            <label for="mysql">MySQL</label>
+        </div>
+        <label for="apresentacao">Nos conte um pouco mais sobre você, suas experiências e objetivos:</label> <br>
+        <textarea name="apresentacao" id="apresentacao" rows="12" cols="60"></textarea>
+        <input type="submit" value="Enviar" class="campo_form">
+    </form>
+</body>
+</html>
