@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  height: 100vh;
+  background-color:rgb(15, 16, 34)
+}
+#sessao1{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formulario{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  width: 17rem;
+  height: 28rem;
+  background: linear-gradient(  
+  to bottom,
+  rgba(153, 153, 153, 0.3),
+  rgba(153, 153, 153, 0.1)
+  );
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 1rem 1rem 0.1rem rgba(0, 0, 0, 0.2);
+  border-left: 0.2rem solid rgba(255, 255, 255, 0.3);
+  border-top: 0.2rem solid rgba(255, 255, 255, 0.3);
+  }
+
+.campos{
+  width: 13rem;
+  padding: 0.4rem;
+  padding-left: 0.7rem;
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(191, 191, 191);
+  border: none;
+}
+
+.campos::placeholder {
+  color: rgb(191, 191, 191);
+  font-size: 0.9rem;
+}
+
+#container_termos label,
+#container_termos label, a{
+  font-size: 0.7rem;
+  color: rgb(191, 191, 191);
+}
+
+#termos{
+  position: relative;
+  top: 0.2rem;
+}
+
+#botao{
+  font-size: 1.2rem;
+}
